@@ -36,7 +36,7 @@ public class AppJobService extends JobService {
         Log.d(TAG, "onStartJob: ");
         mTask = new InnerTask(this);
         mTask.execute(jobParameters);
-        return true;
+        return false;
     }
 
     @Override
